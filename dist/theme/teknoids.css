@@ -1,9 +1,9 @@
 /**
  * Teknoids theme for reveal.js. * 
  */
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 /**
- * Dracula colors by Zeno Rocha
- * https://draculatheme.com/contribute
+ * 
  */
 html * {
   color-profile: sRGB;
@@ -11,15 +11,15 @@ html * {
 }
 
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
-  color: rgb(34, 34, 34);
+  color: rgb(8, 31, 42);
 }
 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: rgb(34, 34, 34);
-  --r-main-font: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --r-background-color: rgb(8, 31, 42);
+  --r-main-font: VT323, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   --r-main-font-size: 40px;
   --r-main-color: rgb(220, 230, 70);
   --r-block-margin: 20px;
@@ -47,7 +47,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 
 .reveal-viewport {
-  background: rgb(34, 34, 34);
+  background: rgb(8, 31, 42);
   background-color: var(--r-background-color);
 }
 
@@ -381,4 +381,17 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 .reveal ul li::marker, .reveal ol li::marker {
   color: var(--r-list-bullet-color);
+}
+.reveal .header {
+  width: 17vw;
+  position: absolute;
+  padding: 2rem;
+}
+.reveal .header .logoWrapper .logo {
+  fill: rgb(220, 40, 90);
+}
+.reveal .header .logoWrapper .logoText {
+  text-align: center;
+  font-size: 1rem;
+  fill: rgb(220, 230, 70);
 }

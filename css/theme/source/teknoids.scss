@@ -8,9 +8,11 @@
 @import "../template/settings";
 // ---------------------------------------------
 
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 // Include theme-specific fonts
-$systemFontsSansSerif: -apple-system,
+$systemFontsSansSerif: VT323,
+                        -apple-system,
 					   BlinkMacSystemFont,
 					   avenir next,
 					   avenir,
@@ -31,8 +33,7 @@ $systemFontsMono: Menlo,
 				  monospace;
 
 /**
- * Dracula colors by Zeno Rocha
- * https://draculatheme.com/contribute
+ * 
  */
 html * {
 	color-profile: sRGB;
@@ -67,7 +68,7 @@ $error: rgb( 192,0,0);
 $success: rgb(163,205,132);
 $info: rgb( 90,190,200);
 
-$background: $dark2;
+$background: rgb(8, 31, 42);
 $foreground: $secondary;
 $selection: $tertiary;
 $comment: $accent;
@@ -119,4 +120,19 @@ $codeFont: "Fira Code", $systemFontsMono;
 			color: var(--r-list-bullet-color);
 		}
 	}
+    .header {
+        width: 17vw;
+        position: absolute;
+        padding: 2rem;
+        .logoWrapper {
+            .logo {
+                fill: $teknoids;
+            }
+            .logoText {
+                text-align: center;
+                font-size: 1rem;
+                fill: $secondary;
+            }
+        }                
+    }
 }
